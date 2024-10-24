@@ -15,7 +15,7 @@ Task prompts是“提示词”，（以语义分割为例）由一张图片和�
 
 所以，在推理阶段，模型的输入是4张图，输出是1张图，其中，空白图并不是真的图，而是可以学习的embedding。
 
-![img](https://nx64h4cmlhw.feishu.cn/space/api/box/stream/download/asynccode/?code=YWZlZDU1ZWRiYWIxYjQ3ZDkwMzUyMzI5NmFkMDVhMWVfOGZIcml5VXRpbkZnSG1GUGZFTFRFaTVXakJITExROTZfVG9rZW46U3phVWIyVlI0bzE3MUJ4V0w4RWNqVmlRblRlXzE3Mjk2Njc2MjQ6MTcyOTY3MTIyNF9WNA)
+![img](images/fig1.png)
 
 ---
 
@@ -25,7 +25,7 @@ Task prompts是“提示词”，（以语义分割为例）由一张图片和�
 - 模型输入有两个分支，一个分支输入照片，一个分支输入GT。
 - GT会被随机masked一些块，让模型预测，然后跟ground truth做对比，计算损失，达到训练模型的目的。
 
-![img](https://nx64h4cmlhw.feishu.cn/space/api/box/stream/download/asynccode/?code=NzkwYzFkYWNmMDYzZDhhODg3NGYyZGVlNzcwNWVjMjNfdWtVUnFzU0NybGdJUUg1enR1VzVUdVpIRFBROUVUaVBfVG9rZW46TzdGVWJBa1RLb1BBRTJ4WDRwQ2N1V2hBbjFkXzE3Mjk2Njc2MjQ6MTcyOTY3MTIyNF9WNA)
+![img](images/fig2.png)
 
 ---
 
